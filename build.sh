@@ -5,7 +5,7 @@ OUT="main"
 gcc -Wall -g $SRC -o $OUT
 
 if [ $? -eq 0 ]; then
-    echo "Compilation successful. Run ./$OUT to execute."
+    printf "Compilation successful. \nRun ./$OUT to execute.\n"
 else
-    echo "Compilation failed."
+    printf "Compilation failed."
 fi
