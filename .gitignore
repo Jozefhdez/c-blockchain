@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Build artifacts
+*.o
+*.out
+main
+*.dSYM/
+
+# Editor
+.vscode/
+*.swp
+*~
