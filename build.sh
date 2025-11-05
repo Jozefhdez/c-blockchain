@@ -1,11 +1,17 @@
 #!/bin/bash
 
-SRC="main.c"
-OUT="main"
-gcc -Wall -g $SRC -o $OUT
+OPENSSL_PATH=$(brew --prefix openssl@3)
+
+# Compile with OpenSSL
+gcc -I${OPENSSL_PATH}/include \
+    -L${OPENSSL_PATH}/lib \
+    crypto.c main.c \
+    -o main \
+    -lssl -lcrypto
 
 if [ $? -eq 0 ]; then
-    printf "Compilation successful. \nRun ./$OUT to execute.\n"
+    echo "Build complete! Run with: ./main"
 else
-    printf "Compilation failed."
+    echo "Build failed!"
+    exit 1
 fi
