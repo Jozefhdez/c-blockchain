@@ -2,10 +2,9 @@
 
 OPENSSL_PATH=$(brew --prefix openssl@3)
 
-# Compile with OpenSSL
 gcc -I${OPENSSL_PATH}/include \
     -L${OPENSSL_PATH}/lib \
-    crypto.c main.c \
+    crypto.c blockchain.c main.c \
     -o main \
     -lssl -lcrypto
 
