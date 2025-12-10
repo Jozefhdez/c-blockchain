@@ -13,7 +13,7 @@ This project implements a dynamic blockchain using a Linked List structure. Key 
 
 ## Project Structure
 
-````
+```
 c-blockchain/
 ├── main.c        # Entry point and simulation logic
 ├── blockchain.c  # Core logic: Mining, Linked List, Validation
@@ -21,7 +21,8 @@ c-blockchain/
 ├── crypto.c      # SHA-256 wrapper functions
 ├── crypto.h      # Cryptography interface
 ├── build.sh      # Compilation script (Mac/Linux)
-└── README.md```
+└── README.md
+```
 
 ## Building
 
@@ -29,7 +30,7 @@ To compile the project, run:
 
 ```bash
 ./build.sh
-````
+```
 
 Or manually compile with:
 
