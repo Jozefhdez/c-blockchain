@@ -1,6 +1,6 @@
-# C Blockchain
+# Blockchain Engine
 
-A simple blockchain project implemented in C.
+A simple blockchain engine project implemented in C.
 
 ## Overview
 
